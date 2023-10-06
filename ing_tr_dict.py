@@ -32,8 +32,7 @@ def sorgula(event):
     if cevap == kilit:
         ingcevap.delete(first=0,last="end")
         soru.delete(first=0,last="end")
-        #dogru = Label(text="cevap doğru", font=("Ariel", 12, "bold"))
-        #dogru.pack()
+        
         
     else:
         ingcevap.delete(first=0,last="end")
