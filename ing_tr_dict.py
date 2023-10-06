@@ -8,7 +8,8 @@ window.title("Türkçe - İngilizce Sözlük")
 window.minsize(width=400, height=400)
 window.config(padx=20, pady=20)
 
-path = "C:\\Users\\eksim\Desktop\\Pyton Eğitim ve Projeler\\VS Code dersler\\7-çoktan seçmeli ingilizce türkçe sorular\\kelime.xlsx"
+#path bölümüne indireceğiniz kelime klasörünün yolunu giriniz.
+path = ""
 okunan= pd.read_excel(path)
 ing = list(okunan.ing)
 tr = list(okunan.tr)
@@ -58,14 +59,6 @@ soru.pack()
 ingcevap = Entry(width=20)
 ingcevap.focus_set()
 ingcevap.pack()
-
-"""dogrula = Button(text="Doğrula", command=sorgula )
-dogrula.config(font=("Ariel", 9, "bold"))
-dogrula.pack()
-
-başlat = Button(text="Başlat", command=getir)
-başlat.config(font=("Ariel", 9, "bold"))
-başlat.pack()"""
 
 
 window.bind("<Return>", sorgula)
